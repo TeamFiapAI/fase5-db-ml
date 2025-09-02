@@ -78,11 +78,32 @@ Foram testadas **duas abordagens**:
 
 ---
 
-## 📈 Resultados
-- 🗄 **Banco de Dados**: modelagem relacional, preparada para ingestão real-time ou via CSV.  
-- 📑 **Dataset**: leituras simuladas cobrindo temperatura, vibração e umidade.  
-- 🤖 **Machine Learning**: pipeline simples, treinado e validado, com gráficos ilustrando resultados.  
-- 📘 **Documentação**: este README + notebooks + script SQL explicam o processo completo.  
+## 📊 Resultados
+
+### 🗂 Modelo de Banco de Dados
+O diagrama abaixo mostra a modelagem do banco de dados relacional criada para armazenar as leituras dos sensores:
+
+<p align="center">
+  <img src="diagrams/der.png" alt="Diagrama Entidade-Relacionamento" width="600"/>
+</p>
+
+---
+
+### 🤖 Machine Learning — Detecção de Anomalias
+O gráfico abaixo mostra as leituras normais e anômalas detectadas pelo modelo **Isolation Forest**:
+
+<p align="center">
+  <img src="notebooks/anomalias.png" alt="Gráfico de Anomalias" width="600"/>
+</p>
+
+Como configuramos `contamination=0.05`, o modelo classificou aproximadamente **5% das leituras como anomalias**, o que é coerente com o esperado.  
+Essas anomalias podem indicar:
+- Leituras incorretas dos sensores,  
+- Condições fora do padrão esperado,  
+- Ou potenciais falhas de equipamento.  
+
+---
+
 
 ---
 
