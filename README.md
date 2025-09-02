@@ -10,9 +10,8 @@ Transformar os dados coletados ou simulados nas fases anteriores em:
 - ✅ Um **modelo de banco de dados relacional** (DER + script SQL).  
 - ✅ Um **conjunto de dados simulado em CSV** com pelo menos 500 leituras por sensor.  
 - ✅ **Notebooks em Python (Google Colab)** para treino de modelo básico de ML (classificação ou detecção de anomalias).  
-- ✅ **Gráficos** que ilustram os resultados do modelo.  
+- ✅ **Gráfico** que ilustra o resultado do modelo.  
 - ✅ **Documentação clara** explicando todo o processo.  
-
 ---
 
 ## 📂 Estrutura do Repositório
@@ -70,11 +69,7 @@ Foram testadas **duas abordagens**:
 - Resultados: percentual de anomalias detectadas (**preencher após execução**).  
 - Gráfico gerado: `notebooks/fig_temperatura_anomalias.png`.  
 
-### 🔹 Opção B (Opcional) — Classificação Simples
-- Modelo: *Logistic Regression*.  
-- Rótulos gerados artificialmente a partir de limites de temperatura, vibração e umidade.  
-- Métricas: accuracy (**preencher após execução**) + matriz de confusão.  
-- Gráfico gerado: `notebooks/fig_matriz_confusao.png`.  
+
 
 ---
 
